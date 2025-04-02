@@ -34,15 +34,37 @@
             .navbar-dark .navbar-nav .nav-link:hover {
                 color: #7fff00;
             }
+            .portfolio-wrap {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .portfolio-wrap img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .portfolio-wrap img:hover {
+            transform: scale(1.05);
+        }
+
+        .project-title {
+            font-size: 1.25rem;
+            margin-top: 10px;
+        }
         </style>
 </head>
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#"><h1 style="margin-right: 10px;" class="fw-bold">Varun Krishna</h1></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand fw-bold" href="#">
+                <h1 class="fw-bold fs-1" style="margin-right: 10px;">Varun Krishna</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -60,7 +82,7 @@
                         <a class="nav-link" href="experience.html">Experience</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link    active" href="project.html"><u>Projects</u></a>
+                        <a class="nav-link active" href="project.html"><u>Projects</u></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="skills.html">Skills</a>
@@ -77,39 +99,42 @@
     </nav>
 
     <section>
-        <div class="container">
+        <div class="container my-5">
 
-            <h3 class="fw-bold mt-3">Projects_________</h3><br>
+            <h3 class="fw-bold mb-4">Projects</h3>
 
             <div class="row">
-
-                <div class="col-lg-4 col-md-2">
-                    <center><h4>News Tracker Application</h4></center>
+                <!-- Project 1 -->
+                <div class="col-12 col-md-4 mb-4">
                     <div class="portfolio-wrap">
-                      <img src="./image/newsproj2.jpg" class="img-fluid" alt="">
-                  </div>
+                        <center><h4 class="project-title">News Tracker Application</h4></center>
+                        <img src="./image/newsproj2.jpg" alt="News Tracker" class="img-fluid">
+                    </div>
                 </div>
 
-                <div class="col-lg-4 col-md-2">
-                    <center><h4>Online Library Management System</h4></center>
+                <!-- Project 2 -->
+                <div class="col-12 col-md-4 mb-4">
                     <div class="portfolio-wrap">
-                      <img src="./image/libproj1.jpg" class="img-fluid" alt="">
-                  </div>
+                        <center><h4 class="project-title">Online Library Management System</h4></center>
+                        <img src="./image/libproj1.jpg" alt="Online Library" class="img-fluid">
+                    </div>
                 </div>
 
-                <div class="col-lg-4 col-md-2">
-                    <center><h4>Age Estimation</h4></center>
+                <!-- Project 3 -->
+                <div class="col-12 col-md-4 mb-4">
                     <div class="portfolio-wrap">
-                      <img src="./image/ageproj2.jpg" class="img-fluid" alt="">
-                  </div>
+                        <center><h4 class="project-title">Age Estimation</h4></center>
+                        <img src="./image/ageproj2.jpg" alt="Age Estimation" class="img-fluid">
+                    </div>
                 </div>
-
             </div>
 
         </div>
     </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
 </body>
+
 </html>
